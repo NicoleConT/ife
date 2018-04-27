@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>简单的菜单动画效果</title>
+        <style>
+        .ct{
+            margin: 0 auto;
+            width: 180px;
+            text-align: center;
+        }
+        #t{
+            margin-top: 40px;
+            font-size: 40px;
+            color: black;
+        }
+        #m{
+            margin-top: 20px;
+            background-color: blue;
+            height: 5px;
+            width: 180px;
+            transition: width 1s;
+            -moz-transition: width 1s;
+            -webkit-transition: width 1s;
+            -o-transition: width 1s;
+        }
+        #b{
+            margin-top: 40px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            background-color: #ffffff;
+            font-size: 30px;
+            padding: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="ct" id="t">前端学院</div>
+            <p class="ct" id="m" style="width:0px"></p>
+            <div class="ct">
+                <button id="b">切换样式</button>
+            </div>
+        </div>
+        <script>
+            var t = document.getElementById("t");
+            var b = document.getElementById("b");
+            var p = document.getElementById("m");
+            b.addEventListener("click",function(){
+                var w = p.style.width;
+                if(w==="180px"){
+                    p.style.width="0px";
+                    t.style.color="black";
+                }else if(w==="0px"){
+                    p.style.width="180px";
+                    t.style.color="blue";
+                }
+            });
+        </script>
+    </body>
+</html>
