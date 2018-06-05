@@ -20,10 +20,15 @@ a {
     color: blue;
 }
 
-.head {
-    font-weight: bold;
+ul {
+    padding: 0;
 }
 
-h2+p+p {
-    margin-bottom: 16px;
+li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.head {
+    font-weight: 700;
 }

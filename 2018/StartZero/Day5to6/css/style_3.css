@@ -1,0 +1,54 @@
+.title{
+    width: 100%;
+    height: 100px;
+    background-color: #AAA;
+    color: #FFF;
+    vertical-align: center;
+}
+
+.title h1{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.info div{
+    width: 100%;
+    border: 1px solid #BBB;
+    height: 100px;
+}
+
+.info div h2{
+    width: 200px;
+    background-color: #CCC;
+    margin: 0;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
+.info div p{
+    margin: 10px 0 0 10px;
+    height: 20px;
+    float: left;
+}
+
+.head{
+    font-weight: 700;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 210px;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    color: blue;
+}
+span{
+    margin-right: 5px;
+}
