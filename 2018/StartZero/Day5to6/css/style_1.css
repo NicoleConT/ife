@@ -1,31 +1,29 @@
 .basicInfo p,
-.contactInfo p{
+.contactInfo p {
     display: inline-block;
 }
 
-p>span{
+p>span {
     margin-right: 5px;
 }
+
 .basicInfo p+p,
-.contactInfo p+p{
-    margin-left: 20px; 
+.contactInfo p+p {
+    margin-left: 20px;
 }
 
-p{
+p {
     margin: 0;
 }
-a{
+
+a {
     color: blue;
 }
 
-.head{
+.head {
     font-weight: bold;
 }
 
-h2+p+p{
+h2+p+p {
     margin-bottom: 16px;
-}
-
-h2{
-    margin-top: 0;
 }
