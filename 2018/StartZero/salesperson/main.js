@@ -75,7 +75,19 @@ $(document).ready(_ => {
 
     // 渲染表格
     function showTable(){
-
+        sourceData.forEach(e =>{
+            if(e.product == productSelectd && e.region == regionSelected){
+                // console.log(e)
+                let str = `<tr id="add"><td>${productSelectd}</td><td>${regionSelected}</td>`
+                for(let s of e.sale){
+                    str += `<td>${s}</td>`
+                }
+                str += `</tr>`
+                // console.log(str)
+                $('#table').append(str)
+            }
+        })
+        
     }
 })
 
